@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodingGita Feedback Form</title>
+</head>
+<body>
+
+  <h1>We’d Love to Hear From You 💬</h1>
+  <p>Your feedback helps us grow and improve.</p>
+
+  <form method="post" action="#">
+
+    <label for="name">What's your name?</label><br>
+    <input type="text" id="name" name="name" placeholder="e.g., Rohit Sharma"><br><br>
+
+    <label for="email">Your email address</label><br>
+    <input type="email" id="email" name="email" placeholder="e.g., rohit@example.com"><br><br>
+
+    <label for="product">Which course or workshop are you sharing feedback on?</label><br>
+    <select id="product" name="product">
+      <option value="mern">MERN Stack Course</option>
+      <option value="dsa">DSA Bootcamp</option>
+      <option value="webdev">Web Development Workshop</option>
+    </select><br><br>
+
+    <fieldset>
+      <legend>How would you rate your experience?</legend>
+      <input type="radio" id="star1" name="rating" value="1">
+      <label for="star1">1 Star</label><br>
+
+      <input type="radio" id="star2" name="rating" value="2">
+      <label for="star2">2 Stars</label><br>
+
+      <input type="radio" id="star3" name="rating" value="3">
+      <label for="star3">3 Stars</label><br>
+
+      <input type="radio" id="star4" name="rating" value="4">
+      <label for="star4">4 Stars</label><br>
+
+      <input type="radio" id="star5" name="rating" value="5">
+      <label for="star5">5 Stars</label>
+    </fieldset><br>
+
+    <label>What would you like to comment on?</label><br>
+    <input type="checkbox" id="content" name="feedback_type" value="content">
+    <label for="content">Content Quality</label><br>
+
+    <input type="checkbox" id="teaching" name="feedback_type" value="teaching">
+    <label for="teaching">Teaching Method</label><br>
+
+    <input type="checkbox" id="support" name="feedback_type" value="support">
+    <label for="support">Support & Guidance</label><br>
+
+    <input type="checkbox" id="overall" name="feedback_type" value="overall">
+    <label for="overall">Overall Experience</label><br><br>
+
+    <label for="suggestions">Any suggestions or thoughts you'd like to share?</label><br>
+    <textarea id="suggestions" name="suggestions" rows="5" cols="40" placeholder="We're all ears!"></textarea><br><br>
+
+    <label for="satisfaction">On a scale of 1 to 10, how satisfied are you?</label><br>
+    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+    <fieldset>
+      <legend>Would you recommend CodingGita to a friend?</legend>
+      <input type="radio" id="recommend_yes" name="recommend" value="yes">
+      <label for="recommend_yes">Yes, definitely!</label><br>
+
+      <input type="radio" id="recommend_no" name="recommend" value="no">
+      <label for="recommend_no">Not really</label>
+    </fieldset><br>
+
+    <label for="date">When are you submitting this feedback?</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <input type="submit" value="Send Feedback">
+    <input type="reset" value="Clear Form">
+
+  </form>
+
+</body>
+</html>
