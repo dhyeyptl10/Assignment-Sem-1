@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+    int n=5;
+    for (int i=1; i<=n;i++)
+    { for (char j='A';j<='A'+ i -1;j++)
+         {printf ("%c",j);}
+
+
+    printf ("\n");
+    
+    }
+
+return 0;
+}
