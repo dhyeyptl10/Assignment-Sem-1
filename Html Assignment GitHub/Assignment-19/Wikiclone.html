@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Header Clone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+   
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: auto;
+    }
+
+    .logo-text {
+      font-size: 18px;
+    }
+
+    .logo-text strong {
+      font-size: 20px;
+    }
+
+  
+    .search {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search input[type="text"] {
+      width: 250px;
+      padding: 6px;
+      border: 1px solid #aaa;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .learn {
+        border: 1px solid darkred;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .search button {
+      padding: 6px 12px;
+      border: 1px solid #aaa;
+      background-color: #f8f8f8;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+
+    
+    .top-links a {
+      margin-left: 12px;
+      text-decoration: none;
+      color: #0645ad;
+      font-size: 14px;
+    }
+
+    .wiki-loves {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .top-links a:hover {
+      text-decoration: underline;
+    }
+
+     body {
+      margin: 30px;
+      font-family: Arial, sans-serif;
+      font-size: medium;
+    }
+
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+  
+    .sidebar {
+      width: 200px;
+      background: #f8f9fa;
+      border-right: 1px solid #ccc;
+      padding: 15px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 16px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin: 6px 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #0645ad;
+    }
+
+   
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 700px;
+    }
+    .content h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+    .content h2 {
+      margin-top: 20px;
+    }
+    .infobox {
+      float: right;
+      margin: 0 0 15px 15px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      background: #fff;
+      width: 220px;
+      text-align: center;
+    }
+    .infobox img {
+      width: 100%;
+    }
+
+    .settings {
+      width: 250px;
+      background: #f8f9fa;
+      border-left: 1px solid #ccc;
+      padding: 15px;
+    }
+    details {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      padding: 8px;
+      border-radius: 5px;
+      background: #fff;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      margin: -8px;
+      padding: 8px;
+    }
+    label {
+      display: block;
+      margin: 5px 0;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia logo">
+      <div class="logo-text">
+        <strong>Wikipedia</strong><br>
+        <small>The Free Encyclopedia</small>
+      </div>
+    </div>
+
+    <div class="search">
+      <form>
+        <input type="text" placeholder="Search Wikipedia">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="top-links">
+      <a href="#">Donate</a>
+      <a href="#">Create account</a>
+      <a href="#">Log in</a>
+    </div>
+  </header><br>
+
+   <div class="learn">
+        
+    
+        <img src="Wiki_Loves_Monuments_Logo_notext.svg.webp" 
+             alt="Logo" >
+        
+     
+        <div style="flex: 1;" class="wiki-loves">
+            <a href="https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2025_in_India">Wiki Loves Monuments: Photograph a monument, help Wikipedia and win! </a><br>
+            <b><a href="#" style="text-decoration: none;">Learn more</a></b>
+        </div>
+        
+     
+        <div style="cursor: pointer; font-size: 20px; padding: 5px;">✖</div>
+    </div>
+
+   <div class="container">
+    
+   
+    <div class="sidebar">
+      <h3>Contents</h3>
+      <ul>
+        <li><a href="#">Mutual fund statistics</a></li>
+        <li><a href="#">Mutual fund category</a></li>
+        <li><a href="#">Controversies</a></li>
+      </ul>
+    </div>
+
+   
+    <div class="content">
+      <h1>Mutual funds in India</h1>
+      <p>
+        The first introduction of a <a href="#">mutual fund in India</a> occurred in 1963,
+        when the Government of India launched the <a href="#">Unit Trust of India</a> (UTI).
+        Mutual funds are broadly categorised into three segments:
+        equity funds, hybrid funds, and debt funds.
+      </p>
+
+      <div class="infobox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Asset_Allocation.pdf/page1-800px-Asset_Allocation.pdf.jpg" alt="Chart">
+        <p><small>Example distribution of funds</small></p>
+      </div>
+
+      <h2>Mutual fund statistics</h2>
+      <p>
+        The total <b>Assets Under Management (AUM)</b> of the Indian mutual fund industry
+        stood at ₹50.78 trillion (US$600 billion) in December 2023.
+      </p>
+      <p>
+        According to SEBI, during FY 2022–23, 73% of mutual fund units were redeemed
+        within 2 years of investment.
+      </p>
+    </div>
+
+  
+    <div class="settings">
+      <details open>
+        <summary>Text</summary>
+        <label><input type="radio" name="text"> Small</label>
+        <label><input type="radio" name="text" checked> Standard</label>
+        <label><input type="radio" name="text"> Large</label>
+      </details>
+
+      <details open>
+        <summary>Width</summary>
+        <label><input type="radio" name="width" checked> Standard</label>
+        <label><input type="radio" name="width"> Wide</label>
+      </details>
+
+      <details open>
+        <summary>Color</summary>
+        <label><input type="radio" name="color"> Automatic</label>
+        <label><input type="radio" name="color" checked> Light</label>
+        <label><input type="radio" name="color"> Dark</label>
+      </details>
+    </div>
+
+  </div>
