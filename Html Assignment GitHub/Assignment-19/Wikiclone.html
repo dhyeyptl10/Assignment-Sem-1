@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
     }
 
-    
+   
     header {
       display: flex;
       align-items: center;
@@ -18,7 +18,7 @@
       border-bottom: 1px solid #ddd;
     }
 
-   
+    
     .logo {
       display: flex;
       align-items: center;
@@ -38,7 +38,6 @@
       font-size: 20px;
     }
 
-  
     .search {
       flex: 1;
       display: flex;
@@ -70,7 +69,7 @@
       border-radius: 0 4px 4px 0;
     }
 
-    
+  
     .top-links a {
       margin-left: 12px;
       text-decoration: none;
@@ -90,22 +89,23 @@
 
      body {
       margin: 30px;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif , Arial;
       font-size: medium;
     }
-
 
     .container {
       display: flex;
       min-height: 100vh;
     }
 
-  
+    
     .sidebar {
       width: 200px;
       background: #f8f9fa;
       border-right: 1px solid #ccc;
       padding: 15px;
+      overflow-y: scroll;
+      height: 100vh
     }
     .sidebar h3 {
       margin-top: 0;
@@ -121,6 +121,7 @@
     .sidebar a {
       text-decoration: none;
       color: #0645ad;
+
     }
 
    
@@ -128,6 +129,9 @@
       flex: 1;
       padding: 20px;
       max-width: 700px;
+      font-weight: 500;
+      overflow: auto;
+       height: 100vh;
     }
     .content h1 {
       font-size: 28px;
@@ -142,13 +146,15 @@
       border: 1px solid #ccc;
       padding: 8px;
       background: #fff;
-      width: 220px;
+      width: 400px;
+      height: 200px;
       text-align: center;
     }
     .infobox img {
       width: 100%;
     }
 
+  
     .settings {
       width: 250px;
       background: #f8f9fa;
@@ -168,6 +174,8 @@
       margin: -8px;
       padding: 8px;
     }
+
+
     label {
       display: block;
       margin: 5px 0;
@@ -195,24 +203,24 @@
 
     <div class="top-links">
       <a href="#">Donate</a>
-      <a href="#">Create account</a>
+      <a href="#">Sign Up</a>
       <a href="#">Log in</a>
     </div>
   </header><br>
 
    <div class="learn">
         
-    
-        <img src="Wiki_Loves_Monuments_Logo_notext.svg.webp" 
+       
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Wiki_Loves_Monuments_Logo_notext.svg/70px-Wiki_Loves_Monuments_Logo_notext.svg.png" 
              alt="Logo" >
         
-     
+       
         <div style="flex: 1;" class="wiki-loves">
             <a href="https://commons.wikimedia.org/wiki/Commons:Wiki_Loves_Monuments_2025_in_India">Wiki Loves Monuments: Photograph a monument, help Wikipedia and win! </a><br>
             <b><a href="#" style="text-decoration: none;">Learn more</a></b>
         </div>
         
-     
+      
         <div style="cursor: pointer; font-size: 20px; padding: 5px;">✖</div>
     </div>
 
@@ -224,13 +232,31 @@
       <ul>
         <li><a href="#">Mutual fund statistics</a></li>
         <li><a href="#">Mutual fund category</a></li>
-        <li><a href="#">Controversies</a></li>
+        <li>
+      <details>
+        <summary>Controversies</summary>
+        <ul>
+          <li><a href="#">2020 Franklin Templeton Mutual Fund fiasco</a></li>
+          <li><a href="#">Reliance Mutual Fund</a></li>
+          <li><a href="#">IL&FS crisis and impact</a></li>
+          <li><a href="#">Amtek Auto Impact</a></li>
+          <li><a href="#">Birla Sun Life Mutual Fund</a></li>
+          <li><a href="#">DHFL crisis and impact</a></li>
+        </ul>
+      </details>
+    </li><br>
+    <li><a href="#"> Market segmebt</a></li><br>
+    <li><a href="#"> Average assets</a></li><br>
+    <li><a href="#">Mutual funds</a></li><br>
+    <li><a href="#"> See also</a></li><br>
+  
       </ul>
     </div>
 
    
     <div class="content">
-      <h1>Mutual funds in India</h1>
+      
+      <h1>Mutual funds in India</h1><hr>
       <p>
         The first introduction of a <a href="#">mutual fund in India</a> occurred in 1963,
         when the Government of India launched the <a href="#">Unit Trust of India</a> (UTI).
@@ -240,21 +266,79 @@
 
       <div class="infobox">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Asset_Allocation.pdf/page1-800px-Asset_Allocation.pdf.jpg" alt="Chart">
-        <p><small>Example distribution of funds</small></p>
       </div>
+      <ul>
 
-      <h2>Mutual fund statistics</h2>
+
+      <h2>Mutual fund statistics</h2><hr>
       <p>
-        The total <b>Assets Under Management (AUM)</b> of the Indian mutual fund industry
-        stood at ₹50.78 trillion (US$600 billion) in December 2023.
+        <li>The total <a href="https://en.wikipedia.org/wiki/Assets_under_management">Assets Under Management (AUM)</a> of the Indian mutual fund industry
+        stood at ₹50.78 trillion (US$600 billion) in December 2023.</li>
       </p>
       <p>
-        According to SEBI, during FY 2022–23, 73% of mutual fund units were redeemed
-        within 2 years of investment.
-      </p>
-    </div>
+       <li> According to <a class="forward-links"  href="https://en.wikipedia.org/wiki/Securities_and_Exchange_Board_of_India" title="The Securities and Exchange Board of India (SEBI) is the regulatory body for securities and commodity market in India under the administrative domain of Ministry of Finance within the Government of India. It was established on 12 April 1988 as an executive body and was given statutory powers on 30 January 1992 through the SEBI Act, 1992.">SEBC</a>, during FY 2022-23, 73% of mutual fund units were redeemed
+        within 2 years of investment. Only investments in 3% of the units continued for more than 5 years.</li><br>
 
-  
+        <li>According to the Reserve Bank of India report, mutual funds attracted 6% of household savings in FY2023 and less than 1% went into direct equities. <sup> <a href="https://en.wikipedia.org/wiki/Mutual_funds_in_India#cite_note-auto9-5">[5][6][7] </a></sup> Almost 95% of household savings in India park their money in bank deposits, including fixed deposit, provident fund, PPF, life insurance, and various small savings schemes.<sup> <a href="https://en.wikipedia.org/wiki/Mutual_funds_in_India#cite_note-auto9-5">[5][6][7] </a></sup></li><br>
+
+        <li>According to the Reserve Bank of India report, mutual funds attracted 6% of household savings in FY2023 and less than 1% went into direct equities.[5][6][7] Almost 95% of household savings in India park their money in bank deposits, including fixed deposit, provident fund, PPF, life insurance, and various small savings schemes.</li><br>
+
+        <li>According to the S&P SPIVA Report FY2022, over a 10-year period, approximate 68% of the large-cap actively managed funds failed to beat their respective benchmarks, and over 50% failed to beat their benchmarks in the mid- and small-cap segments.[8] Within the ELSS funds category, over 60% failed to beat their respective benchmarks over 10 year period.[8] Globally, over long periods of time, passively managed funds consistently outperform actively managed funds</li>
+      </p><br>
+
+
+ <table border="1" cellpadding="6" cellspacing="0">
+    <caption><b>Mutual Fund Units Redeemed Data <sup>[3][4]</sup></b></caption>
+    <tr>
+      <th>Holding Period</th>
+      <th>Units redeemed in FY22 &#9650;&#9660;</th>
+      <th>Units redeemed in FY23 &#9650;&#9660;</th>
+    </tr>
+    <tr>
+      <td>0 - 1 years</td>
+      <td>56.83%</td>
+      <td>50.11%</td>
+    </tr>
+    <tr>
+      <td>1 - 2 years</td>
+      <td>15.14%</td>
+      <td>23.04%</td>
+    </tr>
+    <tr>
+      <td>2 - 3 years</td>
+      <td>5.03%</td>
+      <td>9.81%</td>
+    </tr>
+    <tr>
+      <td>3 - 5 years</td>
+      <td>20.41%</td>
+      <td>13.96%</td>
+    </tr>
+    <tr>
+      <td>More than 5 years</td>
+      <td>2.59%</td>
+      <td>3.09%</td>
+    </tr>
+  </table>
+
+      </ul>
+
+      <ul>
+        <h2>Mutual fund category breakup</h2><hr>
+        <p>
+          <li>AUM of Equity funds - ₹20.33 lakh crore (US$240 billion) (November 2023)</li><br>
+          <li>AUM of Hybrid funds - ₹6.90 lakh crore (US$82 billion) (January 2024)</li><br>
+          <li>AUM of Debt funds - ₹11.97 trillion (US$140 billion) (March 2020)</li><br>
+        </p>
+      </ul>
+
+      <ul>
+        <h2>Controversies</h2><hr>
+        
+      </ul>
+
+</div>
+
     <div class="settings">
       <details open>
         <summary>Text</summary>
