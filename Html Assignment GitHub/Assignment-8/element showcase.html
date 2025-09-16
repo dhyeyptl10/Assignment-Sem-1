@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Elements Showcase</title>
+</head>
+<body>
+
+  
+  <h1 id="top">HTML Elements Showcase – Inline vs Block</h1>
+  <p>
+    In HTML, elements are broadly divided into two categories: 
+    <strong>block-level</strong> and <strong>inline</strong>.  
+    Block elements take up the full width and start on a new line, 
+    while inline elements only use as much width as needed and flow with text.
+  </p>
+
+  <p>
+    <a href="#block">Block Elements</a> |
+    <a href="#inline">Inline Elements</a> |
+    <a href="#comparison">Comparison</a>
+  </p>
+  <hr>
+
+
+  <h2 id="block">Block Elements</h2>
+
+  <h3>1. Paragraph &lt;p&gt;</h3>
+  <p>This is a paragraph inside a block element.</p>
+  <p><em>Explanation:</em> Paragraphs always start on a new line.</p>
+
+  <h3>2. Headings &lt;h1&gt;&lt;h6&gt;</h3>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p><em>Explanation:</em> Headings define different levels of section titles.</p>
+
+  <h3>3. Division &lt;div&gt;</h3>
+  <div style="border:1px solid black; padding:5px;">This is a div container.</div>
+  <p><em>Explanation:</em> Div is a generic block container.</p>
+
+  <h3>4. Unordered List &lt;ul&gt;</h3>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+  <p><em>Explanation:</em> Unordered lists display items with bullets.</p>
+
+  <h3>5. Ordered List &lt;ol&gt;</h3>
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+  <p><em>Explanation:</em> Ordered lists display items with numbers.</p>
+
+  <h3>6. Blockquote &lt;blockquote&gt;</h3>
+  <blockquote>"Coding is the new literacy."</blockquote>
+  <p><em>Explanation:</em> Blockquote is used for long quotations.</p>
+
+  <h3>7. Horizontal Rule &lt;hr&gt;</h3>
+  <p>Above this line</p>
+  <hr>
+  <p>Below this line</p>
+  <p><em>Explanation:</em> HR draws a thematic break.</p>
+
+  <h3>8. Table &lt;table&gt;</h3>
+  <table border="1" >
+    <tr><td>Row 1, Col 1</td><td>Row 1, Col 2</td></tr>
+    <tr><td>Row 2, Col 1</td><td>Row 2, Col 2</td></tr>
+  </table>
+  <p><em>Explanation:</em> Table is used to display data in rows and columns.</p>
+
+  <h3>9. Section &lt;section&gt;</h3>
+  <section style="border:1px dashed blue; padding:5px;">
+    This is a section block.
+  </section>
+  <p><em>Explanation:</em> Section groups related content together.</p>
+
+  <h3>10. Article &lt;article&gt;</h3>
+  <article style="border:1px dashed green; padding:5px;">
+    <h4>Sample Article</h4>
+    <p>This is content inside an article element.</p>
+  </article>
+  <p><em>Explanation:</em> Article is a block for independent content.</p>
+
+  <hr>
+
+  <h2 id="inline">Inline Elements</h2>
+
+  <h3>1. Span &lt;span&gt;</h3>
+  <p>This sentence has a <span style="color:red;">red word</span> inside.</p>
+  <p><em>Explanation:</em> Span is an inline container.</p>
+
+  <h3>2. Anchor &lt;a&gt;</h3>
+  <p>Visit <a href="../Assignment 1/bio.html">Example</a> website.</p>
+  <p><em>Explanation:</em> Anchor creates hyperlinks.</p>
+
+  <h3>3. Bold &lt;b&gt; and Strong &lt;strong&gt;</h3>
+  <p>This is <b>bold</b> text and this is <strong>important</strong> text.</p>
+  <p><em>Explanation:</em> Both make text bold; strong has semantic meaning.</p>
+
+  <h3>4. Italic &lt;i&gt; and Emphasis &lt;em&gt;</h3>
+  <p>This is <i>italic</i> text and this is <em>emphasized</em> text.</p>
+  <p><em>Explanation:</em> Both italicize; em adds importance.</p>
+
+  <h3>5. Underline &lt;u&gt;</h3>
+  <p>This is <u>underlined</u> text.</p>
+  <p><em>Explanation:</em> U adds underline inline.</p>
+
+  <h3>6. Superscript &lt;sup&gt; and Subscript &lt;sub&gt;</h3>
+  <p>E = mc<sup>2</sup> and H<sub>2</sub>O.</p>
+  <p><em>Explanation:</em> Sup writes above line, sub writes below.</p>
+
+  <h3>7. Mark &lt;mark&gt;</h3>
+  <p>This is a <mark>highlighted</mark> word.</p>
+  <p><em>Explanation:</em> Mark highlights text inline.</p>
+
+  <h3>8. Abbreviation &lt;abbr&gt;</h3>
+  <p><abbr title="HyperText Markup Language">HTML</abbr> is the standard for web pages.</p>
+  <p><em>Explanation:</em> Abbr shows abbreviations with tooltips.</p>
+
+  <h3>9. Code &lt;code&gt;</h3>
+  <p>Inline code example: <code>console.log("Hello")</code></p>
+  <p><em>Explanation:</em> Code tag is for inline code snippets.</p>
+
+  <h3>10. Small &lt;small&gt;</h3>
+  <p>This is <small>smaller</small> text.</p>
+  <p><em>Explanation:</em> Small renders text in a smaller size.</p>
+
+  <hr>
+
+  <h2 id="comparison">Inline vs Block Comparison</h2>
+  <table border="1" cellpadding="6" cellspacing="0">
+    <caption>Differences Between Inline and Block Elements</caption>
+    <tr>
+      <th>Block Elements</th>
+      <th>Inline Elements</th>
+    </tr>
+    <tr><td>&lt;div&gt;</td><td>&lt;span&gt;</td></tr>
+    <tr><td>&lt;p&gt;</td><td>&lt;a&gt;</td></tr>
+    <tr><td>&lt;h1&gt; &lt;h6&gt;</td><td>&lt;b&gt;</td></tr>
+    <tr><td>&lt;ul&gt;</td><td>&lt;i&gt;</td></tr>
+    <tr><td>&lt;blockquote&gt;</td><td>&lt;abbr&gt;</td></tr>
+    <tr><td>&lt;table&gt;</td><td>&lt;code&gt;</td></tr>
+    <tr><td>&lt;hr&gt;</td><td>&lt;sup&gt;</td></tr>
+    <tr><td>&lt;section&gt;</td><td>&lt;mark&gt;</td></tr>
+  </table>
+
+  <p><a href="#top">Back to Top</a></p>
+
+</body>
+</html>
