@@ -4,22 +4,22 @@ int main() {
     int n;
 
     
-    printf("enter the lenght of the side ");
+    printf("input a number");
     scanf("%d", &n);
 
    
     for (int i = 1; i <= n; i++) {
         
         for (int j = 1; j <= n; j++) {
-           
-            if (i == 1 || i == n || j == 1 || j == n) {
+            
+            if (j == i || j == n - i + 1) {
                 printf("* ");
             } else {
-                printf("  "); 
+                printf("  ");
             }
         }
         printf("\n"); 
     }
 
     return 0;
-} 
+}

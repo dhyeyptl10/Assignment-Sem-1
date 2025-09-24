@@ -19,6 +19,7 @@ int main() {
             printf("%d ", k);
         }
 
+
        
         printf("\n");
     }

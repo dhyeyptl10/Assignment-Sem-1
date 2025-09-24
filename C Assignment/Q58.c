@@ -3,23 +3,23 @@
 int main() {
     int n;
 
-    
-    printf("enter the lenght of the side ");
+   
+    printf("input a number");
     scanf("%d", &n);
 
-   
+    
     for (int i = 1; i <= n; i++) {
         
         for (int j = 1; j <= n; j++) {
-           
-            if (i == 1 || i == n || j == 1 || j == n) {
-                printf("* ");
+            
+            if (i == (n + 1) / 2 || j == (n + 1) / 2) {
+                printf("%d ", j); 
             } else {
-                printf("  "); 
+                printf("  ");
             }
         }
         printf("\n"); 
     }
 
     return 0;
-} 
+}
