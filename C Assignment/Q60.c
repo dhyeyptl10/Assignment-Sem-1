@@ -1,19 +1,28 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n = 5;
+
+    // Part 1: Top triangle
+    for (int i = 1; i <= n; i++) {
+        printf("%d\t%d\t%d\n", i, n - i + 1, i);
+    }
+
+    // Part 2: Middle line
+    for (int i = n; i >= 1; i--) {
+        printf("%d ", i);
+    }
+    for (int i = 2; i <= n; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
 
    
-    printf("input a number");
-    scanf("%d", &n);
-
-    
-    for (int i = 1; i <= n; i++) {
-        
-        for (int j = 1; j <= n; j++) {
-            printf("%d ", i * j); 
+    for (int i = 2; i <= n; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            printf("\t");
         }
-        printf("\n"); 
+        printf("%d\n", i);
     }
 
     return 0;

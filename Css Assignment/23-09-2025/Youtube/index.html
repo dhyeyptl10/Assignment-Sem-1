@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+        }
+        .sidebar{
+            border: 2px solid rgb(28, 27, 27);
+            height: 130vh;
+            width: 20vw;
+            background-color: gray;
+        }
+        .container{
+            border: 2px solid red;
+            height: 100%;
+            width: 80vw;
+            background-color: #282828;
+        }
+        .searchbar{
+            display: flex;
+            margin-left: 20%;
+          
+        }
+        .searchbar input{
+            width: 400px;
+            height: 30px;
+            border: 1px solid rgb(82, 82, 82);
+        }
+        .search-icon{
+            height: 33px;
+            width: 40px;
+            background-color: darkgrey;
+        }
+        .mice{
+              
+            height: 36px;
+            width: 40px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        .sidenav{
+            display: flex;
+            margin-left: 10%;
+        }
+        .nav{
+             border-bottom: 1.4px solid rgb(158, 158, 158);
+            margin-top: 5px;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+      /* ........................................   */
+      /* .category{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1.5px solid rgb(158, 158, 158);
+        padding: 5px;
+      }
+      .ctg{
+        background-color: rgb(91, 91, 91);
+        border: 1px solid black;
+        border-radius: 40px;
+        padding: 3px ;
+        
+     
+      }
+      .ctg p{
+        color: white;
+      } */
+       .category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space between pills */
+   border-bottom: 1.5px solid rgb(158, 158, 158);
+   padding: 5px;
+}
+
+.ctg {
+  background-color: rgb(91, 91, 91);
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 6px 16px; 
+  display: inline-block; 
+}
+
+.ctg p {
+  color: white;
+  margin: 0;          
+  font-size: 14px;    
+  white-space: nowrap;
+}
+
+      
+      .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .content img{
+        height: 130px;
+        width: 220px;
+      }
+      .thumbnail{
+        width: 220px;
+      }
+      .info{
+        color: white;
+        margin-bottom: 25px;
+        display: flex;
+        padding: 10px;
+      }
+      .channel img{
+        height: 40px;
+        width: 40px;
+        padding-right: 10px;
+      }
+     
+     .logobar{
+      margin-top: 15px;
+      display: flex;
+      justify-content: flex-start;
+     }
+     .logo img{
+      margin-left: 20px;
+     }
+     .hambarger{
+      margin-left: 20px;
+     }
+    </style>
+</head>
+<body>
+  <div class="main">
+
+    <div class="sidebar">
+      <div class="logobar">
+      <div class="hambarger"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/hambarger.png?raw=true" alt=""></div>
+
+      <div class="logo"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Youtube%20logo.png?raw=true" alt=""></div>
+    </div>
+    
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="nav">
+
+        <div class="searchbar">
+            <div><input type="text" placeholder="Search"></div>
+
+            <div class="search-icon"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/search.png?raw=true" alt=""></div>
+
+            <div class="mice"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/mic.png?raw=true" alt=""></div>
+        </div>
+
+         <div class="sidenav">
+        <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/create.png?raw=true" alt=""></div>
+
+        <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/more.png?raw=true" alt=""></div>
+
+        <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/bell.png?raw=true" alt=""></div>
+
+        <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%204%20(6).png?raw=true" alt=""></div>
+
+    </div>
+    </div>
+     
+    <div class="category">
+        <div class="ctg"><p>All</p></div>
+        <div class="ctg"><p>Coke Studio</p></div>
+        <div class="ctg"><p>UX</p></div>
+        <div class="ctg"><p>Case Study</p></div>
+        <div class="ctg"><p>Music</p></div>
+        <div class="ctg"><p>Bangla Lofi</p></div>
+        <div class="ctg"><p>Tour</p></div>
+        <div class="ctg"><p>Saintmartin</p></div>
+        <div class="ctg"><p>Tech</p></div>
+        <div class="ctg"><p>iPhone 13</p></div>
+        
+        <div class="ctg"><p>Computer</p></div>
+    </div>
+
+   
+     <div class="content">
+
+     
+<div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-8.png?raw=true" alt=""></div>
+
+            <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%204%20(1).png?raw=true" alt=""></div><div class="text"><b> Bulbuli|Coke Studio bangla|Season 1|RiturajxNandita</b><small><br>Coke Studio Bangla</small><br><small>1.5M views . 2years ago</small></div></div>
+          </div>
+
+          
+   
+
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-9.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(4).png?raw=true" alt=""></div><div class="text"><b> Infinix Note 12:Helio G88 SoC AMOLED</b><small><br>ATC Android ToTo Company</small><br><small>4.2M views . 2years ago</small></div></div>
+    </div>
+
+        <div class="thumbnail">
+            <div>
+            <img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-10.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%204%20(3).png?raw=true" alt=""></div><div class="text"><b>My first UX Design case study - This got me my first job.</b><small><br>ATC Android ToTo Company</small><br><small>4.8K views . 1 years ago</small></div></div>
+        </div>
+
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-11.png?raw=true" alt=""></div>  <div class="info"><div class="text"><b>My Mix</b><small><br>Lopamudra Mitra, Anupam Roy, and more</small></div></div>
+    </div>
+
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-4.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%204%20(4).png?raw=true" alt=""></div><div class="text"><b> UX Design - What is it?(From AJ &Smart)</b><br><small>AJ&Smar</small><br><small>150K views . 3 years ago</small></div></div>
+        </div>
+
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-5.png?raw=true" alt=""></div>  <div class="info"><div class="text"><b>Mix-Mombati| Mohon Sharif | Dhakaiya Dose | Mahib Ahsan ft Anika</b><small><br>Mohon Sharif, Odd Signature, Shayan Chowdhury Arnob, and more</small></div></div>
+        </div>
+   
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-6.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201.png?raw=true" alt=""></div><div class="text"><b> |48 VISA_FREE</b><small><br>Nadir On The Go</small><br><small>1.7M views . 1 years ago</small></div></div>
+        </div>
+    
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-7.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt=""></div><div class="text"><b>14 Advanced Tips to Design FASTER in Figma</b><small><br>Mizko</small><br><small>53K views . 1 years ago</small></div></div>
+        </div>
+        
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt=""></div><div class="text"><b>14 Advanced Tips to Design FASTER in Figma</b><small><br>Mizko</small><br><small>53K views . 1 years ago</small></div></div>
+        </div>
+        
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-1.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt=""></div><div class="text"><b>14 Advanced Tips to Design FASTER in Figma</b><small><br>Mizko</small><br><small>53K views . 1 years ago</small></div></div>
+        </div>
+        
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-2.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt=""></div><div class="text"><b>14 Advanced Tips to Design FASTER in Figma</b><small><br>Mizko</small><br><small>53K views . 1 years ago</small></div></div>
+        </div>
+        
+        <div class="thumbnail">
+            <div><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Thumbnail-3.png?raw=true" alt=""></div>  <div class="info"><div class="channel"><img src="https://github.com/TheRakshitRaj/CGxSU_Semester_1/blob/main/html_css_js/CSS/00.assignment/02.level_2/08.youtube-clone/assets/Ellipse%201%20(1).png?raw=true" alt=""></div><div class="text"><b>14 Advanced Tips to Design FASTER in Figma</b><small><br>Mizko</small><br><small>53K views . 1 years ago</small></div></div>
+        </div>
+        
+
+     </div>
+</div>
+
+  
+   
+
+
+
+
+
+ 
+
+
+  </div>
+</body>
+</html>

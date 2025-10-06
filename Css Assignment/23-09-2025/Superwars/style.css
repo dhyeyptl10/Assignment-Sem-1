@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(245, 246, 246);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contain{
+    background-color: white;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 15px;;
+}
+
+
+.name{
+    text-align: center;
+}
+
+.point{
+    text-align: center;
+    font-size: 36px;
+}
+
+.score{
+    font-size: 36px;
+    margin-top: 25px;
+}

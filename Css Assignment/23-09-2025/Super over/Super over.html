@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Super Over Scoreboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .scoreboard {
+      background: #1f1f2e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .scoreboard h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #ffd700;
+      letter-spacing: 1px;
+    }
+
+    .team {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .team h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .scores {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .scores span {
+      background: #333;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .six {
+      background: #ff5722;
+    }
+
+    .total {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .ind {
+      background: rgba(0, 123, 255, 0.2);
+      border-left: 5px solid #007bff;
+    }
+
+    .pak {
+      background: rgba(0, 255, 123, 0.2);
+      border-left: 5px solid #00ff7f;
+    }
+
+    .result {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #00ff7f;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="scoreboard">
+    <h1>SUPER OVER</h1>
+
+    <div class="team ind">
+      <h2>IND 🇮🇳</h2>
+      <div class="scores">
+        <span>4</span><span>3</span><span>2</span><span class="six">6</span><span class="six">6</span><span class="six">6</span>
+      </div>
+      <p class="total">Total: <strong>27/0</strong></p>
+    </div>
+
+    <div class="team pak">
+      <h2>PAK 🇵🇰</h2>
+      <div class="scores">
+        <span>2</span><span>4</span><span>0</span><span>3</span><span>1</span><span>4</span>
+      </div>
+      <p class="total">Total: <strong>14/0</strong></p>
+    </div>
+
+    <div class="result">🏆 India wins the Super Over!</div>
+  </div>
+</body>
+</html>
